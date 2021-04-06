@@ -1,0 +1,38 @@
+{
+  "port": 2000,
+  "protocol": "http",
+  "name": "Proxy imposter",
+  "stubs": [
+    {
+      "predicates": [{ "equals": { "path": "/books", "method": "GET" } }],
+      "responses": [
+        {
+          "is": {
+            "statusCode": 200,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body": [
+              {
+                "name": "Harry Potter",
+                "auth": "J. K. Rowling"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "responses": [
+        {
+          "proxy": {
+            "to": "http://localhost:1000",
+            "mode": "proxyOne",
+            "predicateGenerators": [{ "matches": { "path": true } }]
+          }
+        }
+      ],
+      "behaviors": [{ "wait": 500 }]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+    "predicates" :[
+        {
+            "equals":{
+                "method": "PUT",
+                "path": "/books"
+            }
+        }
+    ],
+    "responses" : [
+        {
+            "is": {
+                "statusCode": 200
+            }
+        }
+    ]
+}

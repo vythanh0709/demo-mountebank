@@ -1,0 +1,4 @@
+<% include get.json %>,
+<% include post.json %>,
+<% include put.json %>,
+<% include delete.json %>

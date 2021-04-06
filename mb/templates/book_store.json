@@ -1,0 +1,9 @@
+{
+    "port": 1000,
+    "protocol": "http",
+    "name": "Tutorial",
+    "stubs": [
+        <% include book/books.json%>,
+        <% include category/cats.json %>
+    ]
+}

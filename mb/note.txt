@@ -1,0 +1,12 @@
+C# NuGet Pack
+https://github.com/mattherman/MbDotNet/issues/67
+ - Cannot:
+    + Get entry hypermedia
+    + Add a stub to an existing imposter
+    + Overwrite a stub of an existing imposter
+    + Remove a stub of an existing imposter
+    + Overwrite all imposters with a new set of imposters
+    + Get a list of all imposters
+    + Get mountebank configuration and process information
+    + Get the logs
+

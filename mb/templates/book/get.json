@@ -1,0 +1,31 @@
+{
+  "predicates": [
+    {
+      "equals": {
+        "method": "GET",
+        "path": "/books"
+      }
+    }
+  ],
+  "responses": [
+    {
+      "is": {
+        "statusCode": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": [
+          {
+            "name": "Toi thay hoa vang tren co xanh",
+            "auth": "Nguyen Nhat Anh"
+          },
+          {
+            "name": "Mat biec",
+            "auth": "Nguyen Nhat Anh"
+          }
+        ]
+      },
+      "behaviors": [{ "wait": 5000 }]
+    }
+  ]
+}

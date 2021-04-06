@@ -1,0 +1,17 @@
+{
+    "predicates" :[
+        {
+            "equals":{
+                "method": "DELETE",
+                "path": "/books"
+            }
+        }
+    ],
+    "responses" : [
+        {
+            "is": {
+                "statusCode": 200
+            }
+        }
+    ]
+}

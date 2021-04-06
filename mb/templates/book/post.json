@@ -1,0 +1,29 @@
+{
+    "predicates" :[
+        {
+            "equals":{
+                "method": "POST",
+                "path": "/books"
+            }
+        }
+    ],
+    "responses": [
+        {
+          "is": {
+            "data": "Have you read [BOOK]?"
+          },
+          "behaviors": [
+            {
+              "copy": {
+                "from": "data",
+                "into": "[BOOK]",
+                "using": {
+                  "method": "jsonpath",
+                  "selector": "$.title"
+                }
+              }
+            }
+          ]
+        }
+    ]
+}

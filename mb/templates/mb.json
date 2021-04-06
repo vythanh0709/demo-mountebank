@@ -1,0 +1,6 @@
+{
+    "imposters": [
+        <% include book_store.json %>,
+        <% include proxy_demo.json %>
+    ]
+}
